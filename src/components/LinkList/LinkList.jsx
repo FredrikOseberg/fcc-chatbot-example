@@ -3,7 +3,8 @@ import React from "react";
 import "./LinkList.css";
 
 const LinkList = (props) => {
-  const linkMarkup = props.configProps.map((link) => (
+  console.log(props);
+  const linkMarkup = props.options.map((link) => (
     <li key={link.id} className="link-list-item">
       <a
         href={link.url}
